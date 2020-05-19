@@ -1,0 +1,16 @@
+title: Beginner to Web Development
+description: I am a beginner to web development.
+template:
+  repo: beginner-to-web-development-template
+  name: beginner-to-web-development
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
